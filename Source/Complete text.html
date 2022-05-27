@@ -1,0 +1,468 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=1132' accesskey='1'>Khaḍgaviṣāṇasūtra</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>Khaḍgaviṣāṇasūtra<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1132[5699]" value="5699" id="lancheckbox" checked >Pāli: Pāl: Suttanipata 1.3 (PTS)</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1132[5700]" value="5700" id="lancheckbox" checked >Gāndhārī: Gān: Salomon and Glass (2000)</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1132[5702]" value="5702" id="lancheckbox" checked >Sanskrit: San: </label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="1132">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="1132">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='1132'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v1132">Search in Khaḍgaviṣāṇasūtra</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=1132'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=1132'>Khaḍgaviṣāṇasūtra</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=1132" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value=".|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_." border=0 hspace=2><a id="href_." href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1132&mid=&level=&cid=" class="ajax_tree0">
+</td></tr></table>
+<script language=javascript>test('.|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=1132&amp;mid=1947215">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=1132&amp;cid=&amp;mid=1947215">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=1132&amp;cid=&amp;mid=1947215">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875747bi' class='paragraph'>
+							khaggavisāṇasutta&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875790bi' class='paragraph'>
+							Khargaviṣaṇasutra&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875876bi' class='paragraph'>
+							Khaḍgaviṣāṇagāthā&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875748bi' class='paragraph'>
+							<a class='fotnote cn' name='FN5699cn1' href='#N5699cn1'><sup>1</sup></a>
+§1 sabbesu bhūtesu nidhāya daṇḍaṃ, aviheṭhayaṃ aññataram pi tesaṃ.<br/>na puttam iccheyya kuto sahāyaṃ, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='1' class='note cn'>1.<a class="internt" name='N5699cn1' href='#FN5699cn1'> Ap II Paccekabuddhāpadāna adds a nidāna: atha paccekabuddhāpadānaṃ suṇātha —<br/>“tathāgataṃ jetavane vasantaṃ, apucchi vedehamunī nataṅgo.<br/> ‘paccekabuddhā kira nāma honti, bhavanti te hetubhi kehi vīra{dhīra (sī.) dhīrā (syā.)}’.<br/> “tad āha  sabbaññuvaro mahesī, ānandabhaddaṃ madhurassarena.<br/> ‘ye pubbabuddhesu{sabbabuddhesu (syā. ka.)} katādhikārā, aladdhamokkhā jinasāsanesu.<br/> “‘ten'eva saṃvegamukhena dhīrā, vināpi buddhehi sutikkhapaññā.<br/> ārammaṇenāpi parittakena, paccekabodhiṃ anupāpuṇanti.<br/> “‘sabbamhi lokamhi mamaṃ ṭhapetvā, paccekabuddhehi samo'va natthi.<br/> tesaṃ imaṃ vaṇṇapadesamattaṃ, vakkhāma'haṃ sādhu mahāmunīnaṃ.<br/> “‘sayam eva buddhānaṃ mahāisīnaṃ, sādhūni vākyāni madhū'va{madhuṃva (sī.)} khuddaṃ.<br/> anuttaraṃ bhesajaṃ patthayantā, suṇātha sabbesu pasannacittā.<br/> “‘paccekabuddhānaṃ samāgatānaṃ, paramparaṃ byākaraṇāni yāni.<br/> ādīnavo yañ ca virāgavatthuṃ, yathā ca bodhiṃ anupāpuṇiṃsu.<br/> “‘sarāgavatthūsu virāgasaññī, rattamhi lokamhi virattacittā.<br/> hitvā papañce jitaphanditāni{vidiya phanditāni (sī.) jitabandhitāni (ka.)}, tath'eva bodhiṃ anupāpuṇiṃsu.<br/> “‘sabbesu bhūtesu nidhāya daṇḍaṃ, aviheṭhayaṃ aññatarampi tesaṃ.<br/> mettena cittena hitānukampī, eko care khaggavisāṇakappo.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875791bi' class='paragraph'>
+							1. (1a) sarveṣ(*o) bhuteṣo ṇis̱ae daṃḍo · (1b) avihesao aṃñataraṃ pi teṣo<br/>(1c) metreṇa [ci]tiṇa hita[ṇ]‍(*ukaṃpi (1d) eko care kharga­viṣaṇa­gapo ·) <br/>[=P 1abd; Ap II.8-9; Skt. 2-3]<br/>14. (14a) aṇucha[t]io ahiacae to (14b) viṃñu­praśastaṃ ca su[ho] ya dhaṃm(*o) <br/>(14c) (*ṇa putraṃ i)‍[chea k]uto sahayo (14d) + + (*ca)‍[r]‍(*e kharga­viṣaṇa­gapo ·) <br/>[=P 1c; Skt. 11-12]<br/>23. (23a) śikṣa samadae achidra­vurti (23b) kalaṇa­śilaṃ bha[yava]ja[daśi] <br/>(23c) (*ichea na p)utr(*a k)u[to] (*sahayo (23d) eko care kharga­viṣaṇa­gapo ·) <br/>[=P 1c; Skt. 11-12]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875877bi' class='paragraph'>
+							<a class='fotnote cn' name='FN5702cn1' href='#N5702cn1'><sup>1</sup></a>
+ (2a)... upekṣāṃ karuṇāṃ ca bhāvya (2b) āsevamāno muditāṃ ca kāle<br/> (2c) maitreṇa cittena hitānukaṃpī (2d) eko care khaḍgaviṣāṇakalpo <br/>(3a) sarveṣu prāṇeṣu nidhāya daṇḍaṃ (3b) aviheṭhako anyatare pi teṣāṃ (3c) nikṣiptadaṇḍo trasasthāvareṣu (3d) eko care khaḍgaviṣāṇakalpo&nbsp;</span><div style='' id='2' class='note cn'>1.<a class="internt" name='N5702cn1' href='#FN5702cn1'> Khvs-Skt adds a nidāna: vārāṇasyāṃ sārdhayojane mahāvanakhaṇḍaṃ tatra pratyekabuddhaśatāni prativensu. te pi svakasvakāni vyākaraṇāni vyākaritvā parinirvṛtā.</a>&nbsp; </div><div class='clear'></div></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875749bi' class='paragraph'>
+							§2 saṃsaggajātassa bhavanti snehā, snehanvayaṃ dukkham idaṃ pahoti.<br/>ādīnavaṃ snehajaṃ pekkhamāno, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875792bi' class='paragraph'>
+							2. (2a) [saṃs]‍(*evamaṇas̱a siyati s̄eho) (2b) s̄e[haṃva]yaṃ dukha(*m idaṃ prabhoti) <br/>(2c) + + + + + + + + + + + (2d) (*eko care kharga­viṣaṇa­gapo ·) <br/>[=P 2; Skt. 6; Divy 294, 13-5]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875878bi' class='paragraph'>
+							(6a) saṃsevamānasya siyātisneho (6b) snehānvayaṃ duḥkham idam prabhoti<br/> (6c) saṃsevamānaṃ tu jugupsamāno (6d) eko care khaḍgaviṣāṇakalpo<br/>(7a) saṃsevamānasya siyātisneho (7b) snehānvayaṃ duḥkham idam prabhoti<br/>(7c) priyātisnehaṃ vijugupsamāno (7d) eko care khaḍgaviṣāṇakalpo<br/>(8a) saṃsevamānasya siyātisneho (8b) snehānvayaṃ duḥkham idam prabhoti<br/>(8c) priyā viyogaṃ vijugupsamāno (8d) eko care khaḍgaviṣāṇakalpo<br/>(9a) saṃsevamānasya siyātisneho (9b) snehānvayaṃ duḥkham idam prabhoti<br/>(9c) mitreṣu ādīnavaṃ saṃmṛśanto (9d) eko care khaḍgaviṣāṇakalpo<br/>(10a) saṃsevamānasya siyātisneho (10b) snehānvayaṃ duḥkham idam prabhoti<br/>(10c) priyātisnehaṃ vijugupsamāno (10d) eko care khaḍgaviṣāṇakalpo<br/><a class='fotnote cn' name='FN5702cn2' href='#N5702cn2'><sup>2</sup></a>
+&nbsp;</span><div style='' id='3' class='note cn'>2.<a class="internt" name='N5702cn2' href='#FN5702cn2'> Divy 294, 13-15:<br/> saṃsevamānasya bhavanti snehāḥ snehānvayaṃ saṃbhavatīha duḥkham<br/> ādīnavaṃ snehagataṃ viditvā ekaś caret khaḍgaviṣāṇakalpaḥ.<br/></a>&nbsp; </div><div class='clear'></div></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875750bi' class='paragraph'>
+							§3 mitte suhajje anukampamāno, hāpeti atthaṃ paṭibaddhacitto.<br/> etaṃ bhayaṃ santhave<a class='fotnote cn' name='FN5699cn2' href='#N5699cn2'><sup>2</sup></a>
+ pekkhamāno, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='4' class='note cn'>2.<a class="internt" name='N5699cn2' href='#FN5699cn2'> sandhave (ka.)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875793bi' class='paragraph'>
+							3. (3a) (*m)‍[i]‍(*tra) [s]‍(*ahaya) + + + + + + (3b) (*haveti) [a]r(*th)o paḍi[v]adha­c(*ita) <br/>(3c) + + + + + + + + + + + (3d) (*eko care kharga­viṣaṇa­gapo ·) <br/>[=P 3; Skt. 11-12]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875879bi' class='paragraph'>
+							(11a) putrāṃ sahāyān avalokayanto (11b) hāpeti arthaṃ pratibaddhacitto<br/>(11c) na putraṃ iccheya kuto sahāyān (11d) eko care khaḍgaviṣāṇakalpo<br/>(12a) jñātiṃ sahāyān avalokayanto (12b) hāpeti arthaṃ pratibaddhacitto <br/>(12c)jñātī na iccheya kuto sahāyāṃ (12d)eko care khaḍgaviṣāṇakalpo<br/>&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875751bi' class='paragraph'>
+							§4 vaṃso visālo'va yathā visatto, puttesu dāresu ca yā apekkhā.<br/>vaṃsakkaḷīro'va<a class='fotnote cn' name='FN5699cn3' href='#N5699cn3'><sup>3</sup></a>
+ sajjamāno, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='5' class='note cn'>3.<a class="internt" name='N5699cn3' href='#FN5699cn3'> vaṃsakaḷīrova (sī.), vaṃsākaḷīrova (syā. kaṃ. pī.), vaṃsekaḷīrova (niddesa)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875794bi' class='paragraph'>
+							4. (4a) vaṃśo viśalo va yasa [viṣat]o (4b) putreṣo dareṣo ya ya avekh(*o) <br/>(4c) (*vaṃsakaḍiro va aṣajamaṇo (4d) eko care kharga­viṣaṇa­gapo ·) <br/>[=P 4]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875880bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875752bi' class='paragraph'>
+							§5 migo araññamhi yathā abaddho<a class='fotnote cn' name='FN5699cn4' href='#N5699cn4'><sup>4</sup></a>
+, yen'icchakaṃ gacchati gocarāya.<br/>viññū naro seritaṃ pekkhamāno, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='6' class='note cn'>4.<a class="internt" name='N5699cn4' href='#FN5699cn4'> abandho (syā. kaṃ.)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875795bi' class='paragraph'>
+							5. (5a) mrigo abadho vi yas̱a araṃñe (5b) yeṇichati gachati goyarae <br/>(5c) + + + + + + + + + + + (5d) (*eko care kharga­viṣaṇa­gapo ·) <br/>[=P 5]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875881bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875753bi' class='paragraph'>
+							§6 āmantanā hoti sahāyamajjhe, vāse ṭhāne gamane cārikāya.<br/>anabhijjhitaṃ seritaṃ pekkhamāno, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875796bi' class='paragraph'>
+							8. (8a) amaṃtraṇa bho[t]i maha­yaṇas̱a (8b) + + + + + + + + + + + <br/>(8c) + + + + + + + + + + + (8d) (*eko care kharga­viṣaṇa­gapo ·) <br/>[=P 6]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875882bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875754bi' class='paragraph'>
+							§7 khiḍḍā ratī hoti sahāyamajjhe, puttesu ca vipulaṃ hoti pemaṃ.<br/>piyavippayogaṃ vijigucchamāno, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875797bi' class='paragraph'>
+							7. (7a) saṃkriḍaṇa bho[ti] sahayamaj̄e (7b) [putr]eṣ(*o) [ya viul]‍(*a bhoti prema) <br/>(7c) + + + + + + + + + + + (7d) (*eko care kharga­viṣaṇa­gapo ·) <br/>[=P 7]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875883bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875755bi' class='paragraph'>
+							§8 cātuddiso appaṭigho ca hoti, santussamāno itarītarena.<br/>parissayānaṃ sahitā achambhī, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875798bi' class='paragraph'>
+							34. (34a) catud(*i)‍[śo a]paḍiho kuhi ca (34b) saṃtuśamaṇa itaridare[ṇa] <br/>(34c) (*pariṣeaṇa sa)hita achaṃbi (34d) eko care khargaviṣaṇa[ga]‍(*po ·) <br/>[=P 8; Dhp 331]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875884bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875756bi' class='paragraph'>
+							§9 dussaṅgahā pabbajitāpi eke, atho gahaṭṭhā gharam āvasantā.<br/>appossukko paraputtesu hutvā, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875799bi' class='paragraph'>
+							9. (9a) d[o]saṃ[graha] p[r]av(*ra)‍[yida vi] ege (9b) + + + + + + + + + + + <br/>(9c) + + + + + + + + + + + (9d) (*eko care kharga­viṣaṇa­gapo ·) <br/>[=P 9]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875885bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875757bi' class='paragraph'>
+							§10 oropayitvā gihibyañjanāni<a class='fotnote cn' name='FN5699cn5' href='#N5699cn5'><sup>5</sup></a>
+, sañchinnapatto<a class='fotnote cn' name='FN5699cn6' href='#N5699cn6'><sup>6</sup></a>
+ yathā koviḷāro.<br/>chetvāna vīro gihibandhanāni, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='7' class='note cn'>5.<a class="internt" name='N5699cn5' href='#FN5699cn5'> gihivyañjanāni (syā. kaṃ. pī.)</a>&nbsp; 6.<a class="internt" name='N5699cn6' href='#FN5699cn6'> saṃsīnapatto (sī.)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875800bi' class='paragraph'>
+							19. (19a) ośaḍaïta gihi­viṃjaṇaṇi (19b) [o]śiṇapatro yas̱a koviraḍo <br/>(19c) ka[ṣa]‍(*yavastro abhinikhamitva (19d) eko care kharga­viṣaṇa­gapo ·) <br/>[=P 10, 30; Skt. 4]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875886bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875758bi' class='paragraph'>
+							§11 sace labhetha nipakaṃ sahāyaṃ, saddhiṃ caraṃ sādhuvihāridhīraṃ.<br/>abhibhuyya sabbāni parissayāni, careyya ten'attamano satīmā.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875801bi' class='paragraph'>
+							25. (25a) sayi labhea ṇivago sahayo (25b) sardhacare sas̱ovihari dhiro <br/>(25c) (*abhibhuya) sarvaṇi pariṣeaṇi (25d) carea teṇata­maṇa svad(*ima ·) <br/>[=P 11; MSV III 185, 1-4]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875887bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875759bi' class='paragraph'>
+							§12 no ce labhetha nipakaṃ sahāyaṃ, saddhiṃ caraṃ sādhuvihāridhīraṃ.<br/>rājāva raṭṭhaṃ vijitaṃ pahāya, eko care mātaṅgaraññeva nāgo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875802bi' class='paragraph'>
+							26. (26a) ṇo ya labhea [ṇ]ivag(*o) sahayo (26b) sa[rdha]care sas̱o­vi[ha]ri dh[iro] <br/>(26c) (*raya va raṭha) [v]iyidaṃ prahae (26d) eko care kharga­viṣaṇa­ga[p]‍(*o ·) <br/>[=P 12; Ap II.20= Dhp 329, etc.; MSV III 185, 5-8]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875888bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875760bi' class='paragraph'>
+							§13 addhā pasaṃsāma sahāyasampadaṃ, seṭṭhā samā sevitabbā sahāyā.<br/>ete aladdhā anavajjabhojī, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875803bi' class='paragraph'>
+							27. (27a) [ar]dha prahiśati sahaya­saṃ[pata] (27b) [śreṭh]‍(*a sama se)‍[v]‍(*itava sahaya) <br/>(27c) + + + + + + + + + + [a]. (27d) eko care kharga­viṣaṇa­gapo · <br/>[=P 13]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875889bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875761bi' class='paragraph'>
+							§14 disvā suvaṇṇassa pabhassarāni, kammāraputtena suniṭṭhitāni.<br/>saṅghaṭṭamānāni duve bhujasmiṃ, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875804bi' class='paragraph'>
+							16. (16a) (*dispa suvarṇas̱a prabha)‍[svaraṇi] (16b) kamara­putre[ṇa] s(*u)ṇiṭhidaṇi <br/>(16c) (*saṃghaṭamaṇaṇi d)ue bhuyasi[ṃ] (16d) eko care kharga­viṣaṇa­gap(*o ·) <br/>[=P 14]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875890bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875762bi' class='paragraph'>
+							§15 evaṃ dutiyena<a class='fotnote cn' name='FN5699cn7' href='#N5699cn7'><sup>7</sup></a>
+ sahā mamassa, vācābhilāpo abhisajjanā vā.<br/>etaṃ bhayaṃ āyatiṃ pekkhamāno, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='8' class='note cn'>7.<a class="internt" name='N5699cn7' href='#FN5699cn7'> dutiyena (sabbattha)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875805bi' class='paragraph'>
+							40. (40a) e(*va)ṃ khu (*ma)sa dutieṇa sadha (40b) vayabh(*i)lavo ahiṣajaṇa (*va) <br/>(40c) e(*to bhaya ayati) pr(*e)‍[kṣamaṇa] (40d) [e]k(*o) care kha(*r)ga­viṣa(*ṇa­gapo ·) <br/>[=P 15]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875891bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875763bi' class='paragraph'>
+							§16 kāmā hi citrā madhurā manoramā, virūparūpena mathenti cittaṃ.<br/>ādīnavaṃ kāmaguṇesu disvā, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875806bi' class='paragraph'>
+							17. (17a) kama hi citra mas̱ora maṇorama (17b) [vir]‍(*u)‍[par]‍(*u)‍[v]‍(*e)‍[h]‍(*i mas̱eṃti cita) <br/>(17c) [a]d(*i)ṇ[ava] (*kamaguṇeṣo di)‍[spa] (17d) eko care khargaviṣaṇagapo · <br/>[=P 16]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875892bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875764bi' class='paragraph'>
+							§17 ītī ca gaṇḍo ca upaddavo ca, rogo ca sallañ ca bhayañ ca metaṃ.<br/>etaṃ bhayaṃ kāmaguṇesu disvā, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875807bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875893bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875765bi' class='paragraph'>
+							§18 sītañ ca uṇhañ ca khudaṃ pipāsaṃ, vātātape ḍaṃsasarīsape<a class='fotnote cn' name='FN5699cn8' href='#N5699cn8'><sup>8</sup></a>
+ ca.<br/>sabbāni p' etāni abhisambhavitvā, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='9' class='note cn'>8.<a class="internt" name='N5699cn8' href='#FN5699cn8'> ḍaṃsasiriṃsape (sī. syā. kaṃ. pī.)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875808bi' class='paragraph'>
+							31. (31a) [śita] c[a] u[ṣ̄]a ca kṣus̱a pivas̱a (31b) + + + + + + + + + + + <br/>(31c) + + + + + + + + + + + (31d) (*eko care khargaviṣaṇagapo ·) <br/>[=P 18]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875894bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875766bi' class='paragraph'>
+							§19 nāgo va yūthāni vivajjayitvā, sañjātakhandho padumī uḷāro.<br/>yathābhirantaṃ viharaṃ<a class='fotnote cn' name='FN5699cn9' href='#N5699cn9'><sup>9</sup></a>
+ araññe, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='10' class='note cn'>9.<a class="internt" name='N5699cn9' href='#FN5699cn9'> vihare (sī. pī. niddesa)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875809bi' class='paragraph'>
+							32. (32a) ṇago vi yus̱aṇi vivajaïta (32b) saṃjada­kaṃdho patumaṃ u[raḍo] <br/>(32c) (*yas̱abhiraṃta) vi(*ha)‍[r]‍(*e araṃñe) (32d) [eko] (*care kharga)­[v]‍(*iṣaṇa­gapo ·) <br/>[=P 19]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875895bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875767bi' class='paragraph'>
+							§20 aṭṭhānataṃ saṅgaṇikāratassa, yaṃ phassaye<a class='fotnote cn' name='FN5699cn10' href='#N5699cn10'><sup>10</sup></a>
+ sāmayikaṃ vimuttiṃ.<br/>ādiccabandhussa vaco nisamma, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='11' class='note cn'>10.<a class="internt" name='N5699cn10' href='#FN5699cn10'> phussaye (syā.)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875810bi' class='paragraph'>
+							15. (15a) (*aṭ́ha)‍[ṇa1 to] s(*aṃ)gaṇiaradas̱a (15b) yaṃ phaṣae samaïa vimuti <br/>(15c) [adica]ba[ṃ]dh[us̱a] va[y]o [ṇiśa]ma (15d) eko care khargaviṣa[ṇaga]‍(*po ·) <br/>[=P 20]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875896bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875768bi' class='paragraph'>
+							§21 diṭṭhīvisūkāni upātivatto, patto niyāmaṃ paṭiladdhamaggo.<br/>uppannañāṇomhi anaññaneyyo, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875811bi' class='paragraph'>
+							30. (30a) driṭhi­viṣoaṇi uvativuto (30b) prata ṇiamo paḍila[dha]­mago <br/>(30c) + + + + + + + + + + + (30d) (*eko care kharga­viṣaṇa­gapo ·) <br/>[=P 21]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875897bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875769bi' class='paragraph'>
+							§22 nillolupo nikkuho nippipāso, nimmakkho niddhantakasāvamoho.<br/>nirāsayo<a class='fotnote cn' name='FN5699cn11' href='#N5699cn11'><sup>11</sup></a>
+ sabbaloke bhavitvā, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='12' class='note cn'>11.<a class="internt" name='N5699cn11' href='#FN5699cn11'> nirāsāso (ka.)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875812bi' class='paragraph'>
+							33. (33a) ṇiloluo ṇikuho ṇikaṣayo (33b) ṇimoho ṇidhaṃto­kaṣa[ya­mra]kṣo <br/>(33c) (*ṇiraṣayo sarva­lo)‍[g]‍(*e) bhavitva (33d) eko car(*e) [kha]rga­viṣa[ṇa]­(*gapo ·) <br/>[=P 22]<br/>38. (38a) kitañata taṇi maṇuśaloge (38b) sudulabho baḍo śa[ḍha maṇuśa] <br/>(38c) (*ṇiraṣayo) [sar]‍(*va)­[loge] bhavitva (38d) eko care kharga­[viṣaṇ]‍(*a­gapo ·) <br/>[=P 22c]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875898bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875770bi' class='paragraph'>
+							§23 pāpaṃ sahāyaṃ parivajjayetha, anatthadassiṃ visame niviṭṭhaṃ.<br/>sayaṃ na seve pasutaṃ pamattaṃ, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875813bi' class='paragraph'>
+							13. (13a) pava sahaya parivajaea (13b) aṇartha­sevi viṣame ṇiviṭha <br/>(13c) + + + + + + + + + + (*t)o (13d) (*eko care khargaviṣaṇagapo ·) <br/>[=P 23]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875899bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875771bi' class='paragraph'>
+							§24 bahussutaṃ dhammadharaṃ bhajetha, mittaṃ uḷāraṃ paṭibhānavantaṃ.<br/>aññāya atthāni vineyya kaṅkhaṃ, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875814bi' class='paragraph'>
+							24. (24a) bhayea mitra paḍibhaṇavaṃta (24b) bah(*o)­ṣuda dhaṃma­dhara uraḍa <br/>(24c) (*aṃñae dhaṃmaṃ vi)yigitsa praha(*e) (24d) [ek]‍(*o care kharga­viṣaṇa­gapo ·) <br/>[=P 24abd; SN I 23, 16-20]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875900bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875772bi' class='paragraph'>
+							§25 khiḍḍaṃ ratiṃ kāmasukhañca loke, analaṅkaritvā anapekkhamāno.<br/>vibhūsanaṭṭhānā virato saccavādī, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875815bi' class='paragraph'>
+							10. (10a) (*kriḍa) + + + + + + + + + (10b) + + + + + + + + + + + <br/>(10c) + + + + + + + + + + + (10d) (*eko care kharga­viṣaṇa­gapo ·) <br/>[=P 25]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875901bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875773bi' class='paragraph'>
+							§26 puttañ ca dāraṃ pitarañca mātaraṃ, dhanāni dhaññāni ca bandhavāni<a class='fotnote cn' name='FN5699cn12' href='#N5699cn12'><sup>12</sup></a>
+.<br/>hitvāna kāmāni yathodhikāni, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='13' class='note cn'>12.<a class="internt" name='N5699cn12' href='#FN5699cn12'> bandhavāni ca (pī.)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875816bi' class='paragraph'>
+							6. (6a) putra ya dara yaṃ dhaṇo jahitva (6b) parigrahe ñati a baṃdhava ya <br/>(6c) + + + + + + + + + + + (6d) (*eko care kharga­viṣaṇa­gapo ·) <br/>[=P 26]<br/>18. (18a) p(*u)t[r]aṃ va [mitra] m(*a)ritaṃ va m eva (18b) hitvaṇ(*u) kamaṇi yas̱otoaṇi <br/>(18c) + + + + + + + + + + + (18d) e[k]‍(*o car)e kha(*r)ga­viṣaṇa­gapo (*·) <br/>[=P 26ac]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875902bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875774bi' class='paragraph'>
+							§27 saṅgo eso parittam ettha sokhyaṃ, app' assādo dukkham ettha bhiyyo.<br/>gaḷo eso iti ñatvā mutīmā<a class='fotnote cn' name='FN5699cn13' href='#N5699cn13'><sup>13</sup></a>
+, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='14' class='note cn'>13.<a class="internt" name='N5699cn13' href='#FN5699cn13'> matīmā (syā. ka.)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875817bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875903bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875775bi' class='paragraph'>
+							§28 sandālayitvāna<a class='fotnote cn' name='FN5699cn14' href='#N5699cn14'><sup>14</sup></a>
+ saṃyojanāni, jālaṃva bhetvā salilambucārī.<br/>aggīva daḍḍhaṃ anivattamāno, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='15' class='note cn'>14.<a class="internt" name='N5699cn14' href='#FN5699cn14'> padālayitvāna (ka.)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875818bi' class='paragraph'>
+							20. (20a) saṃdalaïta gihibaṃdhaṇaṇi (20b) jalaṃ yas̱a bh[itva] balaṃ śaüto <br/>(20c) (*agiva daḍha) aṇi[vart]‍(*amaṇa (20d) eko care kharga­viṣaṇa­gapo ·) <br/>[=P 28; Skt. 5]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875904bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875776bi' class='paragraph'>
+							§29 okkhittacakkhū na ca pādalolo, guttindriyo rakkhitamānasāno.<br/>anavassuto apariḍayhamāno, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875819bi' class='paragraph'>
+							28. (28a) [o]kṣita­cakhu yas̱a­cari gramo (28b) gutiṃdrio [ra]kṣati [maṇa]s̱aṇo <br/>(28c) + + + + + + + + + + + (28d) (*eko care kharga­viṣaṇa­gapo ·) <br/>[=P 29; Sn 971-972]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875905bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875777bi' class='paragraph'>
+							§30 ohārayitvā gihibyañjanāni, sañchannapatto<a class='fotnote cn' name='FN5699cn15' href='#N5699cn15'><sup>15</sup></a>
+ yathā pārichatto.<br/>kāsāyavattho abhinikkhamitvā, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='16' class='note cn'>15.<a class="internt" name='N5699cn15' href='#FN5699cn15'> sañchinnapatto (syā. pī.), pacchinnapatto (ka.)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875820bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875906bi' class='paragraph'>
+							(4a)otārayitvā gṛhivyaṃjanāni (4b) saṃśīrṇapatro yatha pāripātro<br/>(4c)kāṣāyavastro abhiniṣkramitvā (4d) eko care khaḍgaviṣāṇakalpo<br/>&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875778bi' class='paragraph'>
+							§31 rasesu gedhaṃ akaraṃ alolo, anaññaposī sapadānacārī.<br/>kule kule appaṭibaddhacitto<a class='fotnote cn' name='FN5699cn16' href='#N5699cn16'><sup>16</sup></a>
+, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='17' class='note cn'>16.<a class="internt" name='N5699cn16' href='#FN5699cn16'> appaṭibandhacitto (ka.)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875821bi' class='paragraph'>
+							12. (12a) (*ras̱e agridhaṃ) + + + + + (12b) + + + + + + + + + + + <br/>(12c) + + + + + + + + + + + (12d) (*eko care kharga­viṣaṇa­gapo ·) <br/>[=P 31]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875907bi' class='paragraph'>
+							(5a)saṃdārayitvā gṛhivyaṃjanāni (5b)śikhir yathā bhasmani ekacārī  <br/>(5c)kāṣāyavastro abhiniṣkramitvā (5d) eko care khaḍgaviṣāṇakalpo <br/>&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875779bi' class='paragraph'>
+							§32 pahāya pañcāvaraṇāni cetaso, upakkilese byapanujja sabbe.<br/>anissito chetva<a class='fotnote cn' name='FN5699cn17' href='#N5699cn17'><sup>17</sup></a>
+ sinehadosaṃ<a class='fotnote cn' name='FN5699cn18' href='#N5699cn18'><sup>18</sup></a>
+, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='18' class='note cn'>17.<a class="internt" name='N5699cn17' href='#FN5699cn17'> chetvā (syā. pī. ka.)</a>&nbsp; 18.<a class="internt" name='N5699cn18' href='#FN5699cn18'> snehadosaṃ (ka.)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875822bi' class='paragraph'>
+							37. (37a) prahaï paṃcavaraṇaṇi cedaso (37b) uvakileśa vavaṇuja s(*ar)‍[v]‍(*a) <br/>(37c) (*abhibhuya sa)r[va]ṇi [pari]ṣ(*e)aṇi (37d) eko care kharga­vi[ṣa]‍(*ṇa­gapo ·) <br/>[=P 32abc, 11c]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875908bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875780bi' class='paragraph'>
+							§33 vipiṭṭhikatvāna sukhaṃ dukhañca, pubbeva ca somanassadomanassaṃ.<br/>laddhānupekkhaṃ samathaṃ visuddhaṃ, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875823bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875909bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875781bi' class='paragraph'>
+							§34 āraddhavīriyo paramatthapattiyā, alīnacitto akusītavutti.<br/>daḷhanikkamo thāmabalūpapanno, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875824bi' class='paragraph'>
+							11. (11a) (*aradha­virya) + + + + + + (11b) + + + + + + + + + + + <br/>(11c) + + + + + + + + + + + (11d) (*eko care kharga­viṣaṇa­gapo ·) <br/>[=P 34; Skt. 1]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875910bi' class='paragraph'>
+							(1a) ālabdhavīryā satatānuyogī (1b) udagracittā akuśīdavartī |<br/> (1c) dṛḍhavikramā vīryabalopapetā (1d) ekacarā khaḍgaviṣāṇakalpā<br/> vaihāyasam abhyudgamya tejodhātuṃ samāpadyitvā anupādāya parinirvṛtā. svakāye tejodhātuye mānsaśoṇitaṃ dhyāpitaṃ. śarīrāṇi patitāni.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875782bi' class='paragraph'>
+							§35 paṭisallānaṃ jhānamariñcamāno, dhammesu niccaṃ anudhammacārī.<br/>ādīnavaṃ sammasitā bhavesu, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875825bi' class='paragraph'>
+							29. (29a) salaṇa to j̄aṇo aricamaṇa (29b) dhaṃmeṣo ṇico aṇudhaṃma­[ya]ri <br/>(29c) [a] + + + + + + + + + + + (29d) (*eko care kharga­viṣaṇa­gapo ·) <br/>[=P 35]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875911bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875783bi' class='paragraph'>
+							§36 taṇhakkhayaṃ patthayamappamatto, aneḷamūgo<a class='fotnote cn' name='FN5699cn19' href='#N5699cn19'><sup>19</sup></a>
+ sutavā satīmā.<br/>saṅkhātadhammo niyato padhānavā, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='19' class='note cn'>19.<a class="internt" name='N5699cn19' href='#FN5699cn19'> anelamūgo (syā. pī. ka.)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875826bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875912bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875784bi' class='paragraph'>
+							§37 sīhova saddesu asantasanto, vātova jālamhi asajjamāno.<br/>padumaṃva toyena alippamāno<a class='fotnote cn' name='FN5699cn20' href='#N5699cn20'><sup>20</sup></a>
+, eko care khaggavisāṇakappo.<br/>&nbsp;</span><div style='' id='20' class='note cn'>20.<a class="internt" name='N5699cn20' href='#FN5699cn20'> alimpamāno (sī. syā. ka.)</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875827bi' class='paragraph'>
+							21. (21a) [sih]‍(*o va chadeṣo) [asaṃ]tra[saṃ]t(*a) (21b) vato va jalasi[ṃ] aṣ(*a)j(*a)maṇ(*a) <br/>(21c) + + + + + + + + + + + (21d) (*eko care kharga­viṣaṇa­gapo ·) <br/>[=P 37]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875913bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875785bi' class='paragraph'>
+							§38 sīho yathā dāṭhabalī pasayha, rājā migānaṃ abhibhuyya cārī.<br/>sevetha pantāni senāsanāni, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875828bi' class='paragraph'>
+							22. (22a) [sih]‍(*o) + + + + + + + + + (22b) + + + + + + + + + + + <br/>(22c) + + + + + + + + + + + (22d) (*eko care kharga­viṣaṇa­gapo ·) <br/>[=P 38]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875914bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875786bi' class='paragraph'>
+							§39 mettaṃ upekkhaṃ karuṇaṃ vimuttiṃ, āsevamāno muditañca kāle.<br/>sabbena lokena avirujjhamāno, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875829bi' class='paragraph'>
+							36. (36a) metra uvekha karuṇa ya bhavae (36b) asevamaṇa mutita e kalo <br/>(36c) (*sarveṇa loge)ṇa [a]‍(*viruj̄ama)‍[ṇ]‍(*a) (36d) eko care kharga­[vi]‍(*ṣaṇa­gapo ·) <br/>[=P 39; Skt. 2]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875915bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875787bi' class='paragraph'>
+							§40 rāgañca dosañca pahāya mohaṃ, sandālayitvāna saṃyojanāni.<br/>asantasaṃ jīvitasaṅkhayamhi, eko care khaggavisāṇakappo.<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875830bi' class='paragraph'>
+							35. (35a) raga ca doṣa ca prahae mokho (35b) taṣ̄a [ya] sarva­[sayoy]‍(*aṇa)‍[ṇi] <br/>(35c) (*asaṃtrasaṃ jivita­saṃ)‍[śayas]i(*ṃ) (35d) [ek]‍(*o) care kha[r]ga­(*v)i[ṣaṇa]­(*gapo ·) <br/>[=P 40]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875916bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875788bi' class='paragraph'>
+							§41 bhajanti sevanti ca kāraṇatthā, nikkāraṇā dullabhā ajja mittā.<br/>attaṭṭhapaññā asucī manussā, eko care khaggavisāṇakappo.<a class='fotnote cn' name='FN5699cn21' href='#N5699cn21'><sup>21</sup></a>
+&nbsp;</span><div style='' id='21' class='note cn'>21.<a class="internt" name='N5699cn21' href='#FN5699cn21'> Ap II Paccekabuddhāpadāna adds: <br/>“‘visuddhasīlā suvisuddhapaññā, samāhitā jāgariyānuyuttā.<br/> vipassakā dhammavisesadassī, maggaṅgabojjhaṅgagate vijaññā.<br/> “‘suññappaṇidhiñca tathānimittaṃ, āsevayitvā jinasāsanamhi.<br/> ye sāvakattaṃ na vajanti dhīrā, bhavanti paccekajinā sayambhū.<br/> “‘mahantadhammā bahudhammakāyā, cittissarā sabbadukkhoghatiṇṇā.<br/> udaggacittā paramatthadassī, sīhopamā khaggavisāṇakappā.<br/> “‘santindriyā santamanā samādhī, paccantasattesu patippacārā.<br/> dīpā parattha idha vijjalantā, paccekabuddhā satataṃ hitāme.<br/> “‘pahīnasabbāvaraṇā janindā, lokappadīpā ghanakañcanābhā.<br/> nissaṃsayaṃ lokasudakkhiṇeyyā, paccekabuddhā satatappitāme.<br/> “‘paccekabuddhānaṃ subhāsitāni, caranti lokamhi sadevakamhi.<br/> sutvā tathā ye na karonti bālā, caranti dukkhesu punappunaṃ te.<br/> “‘paccekabuddhānaṃ subhāsitāni, madhuṃ yathā khuddamavassavantaṃ.<br/> sutvā tathā ye paṭipattiyuttā, bhavanti te saccadasā sapaññā’.<br/> “paccekabuddhehi jinehi bhāsitā, kathā uḷārā abhinikkhamitvā.<br/> tā sakyasīhena naruttamena, pakāsitā dhammavijānanatthaṃ.<br/> “lokānukampāya imāni tesaṃ, paccekabuddhāna vikubbitāni.<br/> saṃvegasaṅgamativaḍḍhanatthaṃ, sayambhusīhena pakāsitānī”ti.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875831bi' class='paragraph'>
+							39. (39a) bhayaṃti sevaṃti ya karaṇa[r]thia (39b) ṇigaraṇo dulabha aja mitra <br/>(39c) (*kule kule apa)‍[ḍ]i[vadha]­cita (39d) eko care kharga­vi[ṣa]‍(*ṇa­gapo ·) <br/>[=P 41abc, 31c]<br/>&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875917bi' class='paragraph'>
+							..&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Pāli'><span id='7875789bi' class='paragraph'>
+							khaggavisāṇasuttaṃ tatiyaṃ niṭṭhitaṃ.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "";
+							kilderef = "   - Pāl: Suttanipata 1.3 (PTS) ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:32.333333333333%;'><div class='Gāndhārī'><span id='7875832bi' class='paragraph'>
+							41. (udd1a) sarveṣo · saṃsevaṇa · yaṃ ca mitra · (udd1b) vaśa viśalo va [·] mriaṃ avadho · (udd1c) [p]u(*t)‍[ra] (*ya dara ya · saṃkriḍaṇa ya ·) (udd1d) amaṃtraṇa · saṃgrahaṇa ya · kriḍa [○]<br/>42. (udd2a) aradhavirya · ras̱e agridha[ṃ] · (udd2b) [pa]‍(*va sahaya ya · aṇucha)‍[ti]‍(*o ·) (udd2c) (*aṭ́haṇa to2 ·) [prabha]‍(*svaraṇi) · [ka]‍(*ma) (udd2d) (*putraṃ) [va] · ohariṇa · yadvalaṇa ○<br/>43. (udd3a) [siha d]‍(*ue) [·] śikṣa · bhayea mitra · (udd3b) sayi labh(*e) [·] ṇo [ya la]‍(*bhea · ardha) (udd3c) (*okṣitacakhu) [ya]s̱a­cari gramo · (udd3d) salaṇa va · driṭhi­vi[ṣo]‍(*a yava ○)<br/>44. (udd4a) [śita ca] (*·) [ṇa]g(*o) [vi] (*·) [ṇ]‍(*i)‍[lo]‍(*l)uo (*ya ·) (udd4b) (*catudi)‍[ś]‍(*o ·) [raga] (*· metra uvekha ·) (udd4c) (*avaraṇaṇi ceda)‍[s]‍(*o ·) [kitañada] · (udd4d) bhayaṃti [ya]va · dutieṇa sa[dha] (*○)<br/>&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "";
+							kilderef = "   - Gān: Salomon and Glass (2000) ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:32.333333333333%;'><div class='Sanskrit'><span id='7875918bi' class='paragraph'>
+							sarvā khaḍgaviṣāṇagāthā vistareṇa kartavyā. paṃcānāṃ pratyekabuddhaśatānām eka-ekā gāthā. ṛṣayo 'tra patitā ṛṣipatanaṃ.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "";
+							kilderef = "   - San:  ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'></div><div class='textvar' style='width:32.333333333333%;'></div><div class='textvar' style='width:32.333333333333%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=779ffba9-9184-11e7-8793-0050569f23b2</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>
